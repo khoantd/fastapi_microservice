@@ -1,7 +1,7 @@
 install:
 	#install commands
-	pip3 install --upgrade pip &&\
-	pip3 install -r requirements.txt
+	pip install --upgrade pip &&\
+	pip install -r requirements.txt
 
 format:
 	#format code
@@ -17,6 +17,10 @@ test:
 
 build:
 	#build container
+	docker build -t deploy-fastapi .
+
+run:
+	#docker run -p 127.0.0.1:8080:8080 6857056eae51
 
 deploy:
 	#deploy

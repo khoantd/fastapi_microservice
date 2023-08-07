@@ -10,4 +10,4 @@ def test_search():
 
 
 def test_phrase():
-    assert 'american politician' in phrase("Obama")
+    assert "american politician" in phrase("Obama")
