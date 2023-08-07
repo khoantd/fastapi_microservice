@@ -13,7 +13,7 @@ lint:
 
 test:
 	#test
-	python -m pytest -vv --cov=mylib test_logic.py
+	python -m pytest -vv --cov=mylib test_logic.py test_main.py
 
 build:
 	#build container
