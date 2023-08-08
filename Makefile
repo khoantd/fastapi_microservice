@@ -18,10 +18,10 @@ test:
 
 build:
 	#build container
-	sudo systemctl status docker
-    sudo systemctl start docker
-	ls -l /var/run/docker.sock
-	sudo chown root:docker /var/run/docker.sock
+	sudo systemctl status docker &&\
+    sudo systemctl start docker &&\
+	ls -l /var/run/docker.sock &&\
+	sudo chown root:docker /var/run/docker.sock &&\
 	docker build -t deploy-fastapi .
 
 run:
