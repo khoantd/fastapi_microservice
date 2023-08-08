@@ -32,4 +32,4 @@ deploy:
 	docker tag wiki:latest 103629660136.dkr.ecr.ap-southeast-1.amazonaws.com/wiki:latest
 	docker push 103629660136.dkr.ecr.ap-southeast-1.amazonaws.com/wiki:latest
 	
-all: install lint test deploy
+all: install post-install lint test deploy
